@@ -1,0 +1,6 @@
+.vs
+LDConsoleCLI/bin
+LDConsoleCLI/obj
+LDConsoleCLI.Tests/bin
+LDConsoleCLI.Tests/obj
+TestResults
