@@ -5,14 +5,14 @@ namespace LDPlayer.Console
 {
     public class LDConsole
     {
-        private readonly ExeExecutor _excutor;
+        private readonly ConsoleExecutor _excutor;
 
         public LDConsole(string consolePath)
         {
             _excutor = new(consolePath);
         }
 
-        public LDConsole(string consolePath, IExeExecutorOption option)
+        public LDConsole(string consolePath, IConsoleExecutorOption option)
         {
             _excutor = new(consolePath, option);
         }
