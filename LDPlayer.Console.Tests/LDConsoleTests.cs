@@ -17,7 +17,9 @@ namespace LDPlayer.Console.Tests
         public async Task RunAdbCommand()
         {
             var players = await console.GetList();
-            LDPlayerInfo player = players.Find(x => x.Name == "zetatest");
+            LDPlayerInfo? player = players.Find(x => x.Name == "zetatest");
+
+            Assert.IsNotNull(player);
 
             string result = await console.RunAdbCommand(player.Index, "shell echo 1");
 

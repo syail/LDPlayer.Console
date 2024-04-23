@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDPlayer.Console", "LDPlayer.Console\LDPlayer.Console.csproj", "{5BCC641B-097E-4112-A02F-11A1B29D2E71}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDPlayer.Console.Tests", "LDPlayer.Console.Tests\LDPlayer.Console.Tests.csproj", "{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDPlayer.Console.Tests", "LDPlayer.Console.Tests\LDPlayer.Console.Tests.csproj", "{F505A88B-27F7-4CE3-9FBC-67CA4AEA6992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{5BCC641B-097E-4112-A02F-11A1B29D2E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BCC641B-097E-4112-A02F-11A1B29D2E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BCC641B-097E-4112-A02F-11A1B29D2E71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F505A88B-27F7-4CE3-9FBC-67CA4AEA6992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F505A88B-27F7-4CE3-9FBC-67CA4AEA6992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F505A88B-27F7-4CE3-9FBC-67CA4AEA6992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F505A88B-27F7-4CE3-9FBC-67CA4AEA6992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
