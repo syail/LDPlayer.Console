@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LDConsoleCLI.Excutor
+namespace LDPlayer.Console.Executor
 {
-    public interface IExeExcutorOption
+    public interface IExeExecutorOption
     {
         public int Timeout { get; set; }
         public int RetryCount { get; set; }

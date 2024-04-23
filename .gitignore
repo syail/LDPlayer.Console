@@ -1,6 +1,6 @@
 .vs
-LDConsoleCLI/bin
-LDConsoleCLI/obj
-LDConsoleCLI.Tests/bin
-LDConsoleCLI.Tests/obj
+LDPlayer.Console/bin
+LDPlayer.Console/obj
+LDPlayer.Console.Tests/bin
+LDPlayer.Console.Tests/obj
 TestResults

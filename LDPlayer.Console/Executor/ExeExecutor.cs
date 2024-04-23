@@ -1,19 +1,19 @@
 ﻿using System.Diagnostics;
 
-namespace LDConsoleCLI.Excutor
+namespace LDPlayer.Console.Executor
 {
-    internal class ExeExcutor
+    internal class ExeExecutor
     {
         public string ProcPath { get; }
-        public IExeExcutorOption Option { get; }
+        public IExeExecutorOption Option { get; }
 
-        public ExeExcutor(string procPath)
+        public ExeExecutor(string procPath)
         {
             ProcPath = procPath;
             Option = new ExeExcutorOption();
         }
 
-        public ExeExcutor(string procPath, IExeExcutorOption option)
+        public ExeExecutor(string procPath, IExeExecutorOption option)
         {
             ProcPath = procPath;
             Option = option;
@@ -35,7 +35,7 @@ namespace LDConsoleCLI.Excutor
                     CreateNoWindow = true
                 }
             };
-            while(retryCount < Option.RetryCount)
+            while (retryCount < Option.RetryCount)
             {
                 CancellationTokenSource cts = new(Option.Timeout);
                 try
@@ -43,7 +43,7 @@ namespace LDConsoleCLI.Excutor
                     process.Start();
                     //await process.WaitForExitAsync(cts.Token);
 
-                    string output = await process.StandardOutput.ReadToEndAsync();
+                    string output = await process.StandardOutput.ReadToEndAsync(cancellationToken: cts.Token);
 
                     return output;
                 }
@@ -55,7 +55,7 @@ namespace LDConsoleCLI.Excutor
             throw new Exception("Failed to execute the process.");
         }
 
-        internal class ExeExcutorOption : IExeExcutorOption
+        internal class ExeExcutorOption : IExeExecutorOption
         {
             public int Timeout { get; set; } = 5000;
             public int RetryCount { get; set; } = 3;

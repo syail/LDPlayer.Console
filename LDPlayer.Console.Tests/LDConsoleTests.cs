@@ -1,6 +1,6 @@
-﻿using LDConsoleCLI.Dto;
+﻿using LDPlayer.Console.Dto;
 
-namespace LDConsoleCLI.Tests
+namespace LDPlayer.Console.Tests
 {
     [TestClass()]
     public class LDConsoleTests

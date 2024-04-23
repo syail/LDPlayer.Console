@@ -1,18 +1,18 @@
-﻿using LDConsoleCLI.Dto;
-using LDConsoleCLI.Excutor;
+﻿using LDPlayer.Console.Dto;
+using LDPlayer.Console.Executor;
 
-namespace LDConsoleCLI
+namespace LDPlayer.Console
 {
     public class LDConsole
     {
-        private readonly ExeExcutor _excutor;
+        private readonly ExeExecutor _excutor;
 
         public LDConsole(string consolePath)
         {
             _excutor = new(consolePath);
         }
 
-        public LDConsole(string consolePath, IExeExcutorOption option)
+        public LDConsole(string consolePath, IExeExecutorOption option)
         {
             _excutor = new(consolePath, option);
         }

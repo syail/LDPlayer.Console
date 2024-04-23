@@ -1,4 +1,4 @@
-﻿namespace LDConsoleCLI.Dto
+﻿namespace LDPlayer.Console.Dto
 {
     public class LDPlayerInfo
     {
@@ -21,7 +21,7 @@
         public int ScreenWidth { get; set; }
         public int ScreenHeight { get; set; }
         public int DPI { get; set; }
-        
+
         public enum LDPlayerState
         {
             Stopped = 0,

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDConsoleCLI", "LDConsoleCLI\LDConsoleCLI.csproj", "{5BCC641B-097E-4112-A02F-11A1B29D2E71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDPlayer.Console", "LDPlayer.Console\LDPlayer.Console.csproj", "{5BCC641B-097E-4112-A02F-11A1B29D2E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDConsoleCLI.Tests", "LDConsoleCLI.Tests\LDConsoleCLI.Tests.csproj", "{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDPlayer.Console.Tests", "LDPlayer.Console.Tests\LDPlayer.Console.Tests.csproj", "{4DC473CE-FC7C-4270-A53A-C9FE6C93DBBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
