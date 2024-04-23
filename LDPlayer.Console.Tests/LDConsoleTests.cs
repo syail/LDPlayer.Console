@@ -21,7 +21,7 @@ namespace LDPlayer.Console.Tests
 
             Assert.IsNotNull(player);
 
-            string result = await console.RunAdbCommand(player.Index, "shell echo 1");
+            string result = await console.ExecuteAdbCommand(player.Index, "shell echo 1");
 
             Assert.AreEqual("1", result.Trim());
         }
