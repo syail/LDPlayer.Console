@@ -69,5 +69,12 @@ namespace LDPlayer.Console
 
             return result.Trim();
         }
+
+        public async Task<string> ExecuteAdbCommand(string name, string command)
+        {
+            string result = await _executor.Execute($"adb --name {name} --command \"{command}\"");
+
+            return result.Trim();
+        }
     }
 }
